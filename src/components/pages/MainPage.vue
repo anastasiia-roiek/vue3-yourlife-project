@@ -1,3 +1,9 @@
+<script setup lang="ts">
+import Header from '../Header.vue';
+</script>
+
 <template>
-  <h1>TвійLife.</h1>
+  <div>
+    <Header></Header>
+  </div>
 </template>
