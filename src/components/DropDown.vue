@@ -49,6 +49,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
+  background-color: rgb(133, 133, 131);
   width: 100%; 
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -62,7 +63,7 @@
   display: block;
   padding: 8px;
   text-decoration: none;
-  color: #333;
+  color: #2a1b1b;
 }
 
 .dropdown-content a:hover {

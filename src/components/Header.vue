@@ -17,34 +17,36 @@ import DropDown from './DropDown.vue';
   </div>
 </template>
 
-<style>
+<style lang="scss">
+@use "../styles/utils/mixins";
+
 .header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   height: 130px;
-}
 
-.header-title {
-  margin: 15px auto;
-  font-size: 50px;
-  text-transform: uppercase;
-}
+  &-title {
+    margin: 15px auto;
+    font-size: 50px;
+    text-transform: uppercase;
+  }
 
-.header-menu-wrapper {
-  height: 35px;
-  width: 100%;
-  background-color: rgb(227, 227, 227);
-}
+  &-menu {
+    display: none;
 
-.header-menu {
-  display: none;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+    }
 
- @media (min-width: 744px) {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
+    &-wrapper {
+      height: 35px;
+      width: 100%;
+      background-color: rgb(227, 227, 227);
+    }
   }
 };
 </style>
