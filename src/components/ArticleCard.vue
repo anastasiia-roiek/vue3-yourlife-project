@@ -23,14 +23,19 @@ import { RouterLink, RouterView } from 'vue-router'
   width: 320px;
   height: max-content;
   border-radius: 3%;
+  transition: transform 0.2s ease;
+
+  &:hover {
+  transform: scale(1.05);
+  }
   
   @media (min-width: 768px) {
     width: 230px;
-    height: 280px;
+    height: max-content;
   }
 
   &-image{
-    width: 320px;
+    width: 100%;
     height: 205px;
     margin-bottom: 15px;
     border-radius: 3%;

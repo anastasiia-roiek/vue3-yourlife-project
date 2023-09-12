@@ -113,8 +113,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 5px;
+    gap: 5px;    
   }
+  
+  li:hover {
+      text-decoration: underline;
+      color: rgb(64, 62, 62);
+    }
 
   &-contacts {
     display: flex;

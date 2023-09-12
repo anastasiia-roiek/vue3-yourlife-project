@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
+import MainView from './views/MainView.vue';
+import ArticleView from './views/MainView.vue';
+import SearchSection from './components/SearchSection.vue'
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <!-- <nav>
-        <RouterLink to="/">Main</RouterLink>
-        <RouterLink to="/article">Article</RouterLink>
-      </nav> -->
-    </div>
-  </header>
+    <Header></Header>
+    <SearchSection/>
+    
+    <router-view></router-view>
 
-  <RouterView />
+    <Footer></Footer>
 </template>

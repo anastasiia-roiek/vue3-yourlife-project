@@ -3,8 +3,6 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <RouterLink to="/">Головна</RouterLink>
-
   <div class="article container">
       <div class="article-header">
         <p class="article-title">Болить спина?</p>
@@ -18,7 +16,9 @@ import { RouterLink, RouterView } from 'vue-router'
 
       <p class="article-text">text</p>
 
-      <button class="article-button" >Пройти тест</button>
+      <div class="article-button-wrapper">
+        <button class="article-button" >Пройти тест</button>
+      </div>
     </div>
 </template>
 
@@ -78,6 +78,27 @@ import { RouterLink, RouterView } from 'vue-router'
 
   &-text {
     font-size: small;
+  }
+
+  &-button {
+    background-color: red;
+    border: none;
+    width: 185px;
+    height: 60px;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 5%;
+    transition: transform 0.2s ease;
+
+    &:hover {
+    transform: scale(1.05) ; 
+    }
+
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 </style>
